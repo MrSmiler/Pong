@@ -1,7 +1,8 @@
 ﻿// PingPong.cpp : Defines the entry point for the application.
 //
 
-#include "PingPong.h"
+#include <iostream>
+#include <SFML/Graphics.hpp>
 
 using namespace std;
 
