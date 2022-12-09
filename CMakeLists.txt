@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("PingPong")
+project ("Pong")
 
 if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
     message(FATAL_ERROR "Please dertermine CMAKE_TOOLCHAIN_FILE variable "
@@ -16,9 +16,6 @@ if(NOT EXISTS ${CMAKE_TOOLCHAIN_FILE})
 endif()
 
 
-# TODO: get triplet from user
-
-
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /MTd")
 
@@ -27,4 +24,4 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /Zi")
 
 
 # Include sub-projects.
-add_subdirectory ("PingPong")
+add_subdirectory ("Pong")
