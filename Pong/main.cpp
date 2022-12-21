@@ -4,10 +4,9 @@
 #include <iostream>
 #include <vector>
 
-
 int main()
 {
-    sf::VideoMode desktop = sf::VideoMode::getDesktopMode();
+    const sf::VideoMode desktop = sf::VideoMode::getDesktopMode();
     sf::RenderWindow window(sf::VideoMode(1280, 768), "Hello Window");
     while (window.isOpen())
     {
